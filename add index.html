@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>補天SRC 漏洞演示平台</title>
+<style>
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(135deg, #1e3a8a, #312e81);
+color: white;
+margin: 0;
+padding: 20px;
+min-height: 100vh;
+}
+.container {
+max-width: 700px;
+margin: 0 auto;
+background: rgba(255,255,255,0.1);
+padding: 30px;
+border-radius: 15px;
+}
+h1 { text-align: center; margin-bottom: 30px; }
+.demo {
+background: rgba(0,0,0,0.3);
+padding: 25px;
+border-radius: 10px;
+margin: 20px 0;
+}
+.fake-link {
+color: #60a5fa;
+text-decoration: underline;
+font-size: 19px;
+cursor: not-allowed;
+padding: 10px 0;
+display: inline-block;
+}
+.fake-link:hover {
+color: #93c5fd;
+}
+.real-button {
+position: fixed;
+bottom: 30px;
+right: 20px;
+background: #e11d48;
+color: white;
+padding: 16px 32px;
+border-radius: 50px;
+text-decoration: none;
+font-weight: bold;
+font-size: 17px;
+box-shadow: 0 6px 20px rgba(225, 29, 72, 0.5);
+}
+.real-button:hover {
+background: #be123c;
+transform: scale(1.08);
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h1>補天 SRC 公益漏洞報告演示</h1>
+
+<div class="demo">
+<h2>漏洞演示：虚假可點擊連結</h2>
+<p>請將手指或滑鼠移到下面這行藍色文字上：</p>
+<p><span class="fake-link">🔗 後台管理系統入口 - 請點擊進入</span></p>
+<p style="color:#a5b4fc; margin-top: 20px;">
+※ 注意：雖然有底線和懸停效果，看似可以點擊，<br>
+但實際上這個連結已被禁用，這就是本次報告的核心漏洞。
+</p>
+</div>
+</div>
+
+<a href="page2.html" class="real-button">前往第二頁演示 →</a>
+</body>
+</html>
