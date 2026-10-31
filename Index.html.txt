@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>補天SRC 公益漏洞報告演示</title>
+    <style>
+        body {background:#0f172a;color:white;font-family:Arial;padding:20px;line-height:1.6;}
+        .box {background:#1e2937;padding:30px;border-radius:15px;max-width:700px;margin:0 auto;}
+        h1 {color:#60a5fa;text-align:center;}
+        h2 {color:#f87171;}
+        .fake-link {color:#60a5fa;text-decoration:underline;font-size:19px;cursor:pointer;}
+        pre {background:#111827;padding:15px;border-radius:8px;overflow-x:auto;font-size:14px;}
+    </style>
+</head>
+<body>
+    <div class="box">
+        <h1>補天 SRC 公益漏洞報告演示</h1>
+        <h2>漏洞類型：虚假可點擊超連結 (Visual Spoofing)</h2>
+        
+        <h3>漏洞演示</h3>
+        <p>請長按或點擊下面這行藍色文字：</p>
+        <p><span class="fake-link">🔗 後台管理系統入口 - 請點擊進入管理頁面</span></p>
+        <p style="color:#94a3b8;">注意：雖然有底線和顏色，但這個連結實際上無法點擊。這就是本次報告的核心漏洞。</p>
+
+        <h3>漏洞核心代碼</h3>
+        <pre>&lt;span class="fake-link"&gt;🔗 後台管理系統入口 - 請點擊進入管理頁面&lt;/span&gt;</pre>
+
+        <h3>漏洞危害</h3>
+        <p>・誘導用戶點擊假連結<br>
+           ・可配合釣魚攻擊<br>
+           ・損害平台公信力</p>
+
+        <p style="text-align:center;margin-top:40px;color:#64748b;">
+            報告人：jayjaychan0124-bit<br>
+            演示平台：GitHub Pages<br>
+            提交日期：2026年10月
+        </p>
+    </div>
+</body>
+</html>
